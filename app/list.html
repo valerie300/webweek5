@@ -1,0 +1,336 @@
+---
+title: 後台2
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="ms-4">
+  <div class="d-flex mt-5 justify-content-between">
+    <div class="d-flex">
+      <h1 class="assignment me-5">Assignment</h1>
+      <a
+        href="#exampleModal"
+        class="d-flex course-link fw-bolder"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <span class="material-icons-outlined text-success me-2"> add </span>
+        Add New Admin
+      </a>
+    </div>
+    <div class="course-icon">
+      <span class="material-icons-outlined me-3"> search </span>
+      <span class="material-icons-outlined"> notifications_active </span>
+    </div>
+  </div>
+  <!-- modal -->
+  <div
+    class="modal fade modal-height position-absolute top-50 start-50 translate-middle""
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4
+            class="modal-title admin-text fw-bolder py-3"
+            id="exampleModalLabel"
+          >
+            Edit Admin
+          </h4>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="border-bottom">
+            <h5 class="modal-text fw-bolder">Account</h5>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Name</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Emir Wicks"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="emir.wicks@mail.com"
+              />
+            </div>
+          </div>
+          <div class="border-bottom mt-3 pb-3">
+            <h5 class="modal-text fw-bolder">Verification</h5>
+            <div class="d-flex justify-content-between my-3">
+              <p class="d-flex">
+                <span class="material-icons-outlined text-success me-2">
+                  check_circle
+                </span>
+                Verified
+              </p>
+              <p>2020/4/12</p>
+            </div>
+            <a
+              type="button"
+              class="d-grid gap-2 text-center border border-2 send-mail py-3"
+              >Send Verification Mail</a
+            >
+          </div>
+          <div class="border-bottom mt-3 pb-3">
+            <h5 class="modal-text fw-bolder">Access Level</h5>
+            <select
+              class="form-select mt-3 py-3"
+              aria-label="Default select example"
+            >
+              <option selected>Admin</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="border-bottom mt-3 pb-3">
+            <h5 class="modal-text fw-bolder">Custom Access</h5>
+            <div class="form-check mt-3 mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Lecture
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Coupon
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Message
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Setting
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Task Menu
+              </label>
+            </div>
+          </div>
+          <div class="mt-3 pb-3">
+            <h5 class="modal-text fw-bolder">Deactivate Account</h5>
+            <div class="d-flex mt-3">
+              <span class="material-icons-outlined text-danger me-2">
+                warning
+              </span>
+              <p class="text-danger">This cannot be undone!</p>
+            </div>
+            <div class="d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-outline-danger py-3">
+                Deactivate This Account
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-success px-5"
+            data-bs-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" class="btn btn-success text-white px-5">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- table -->
+  <table class="table mt-4 justify-content-between align-items-center">
+    <thead>
+      <tr class="bottom-dark fw-bolder">
+        <th scope="col">
+          <div class="d-flex">
+            ID
+            <span class="material-icons-outlined text-success">
+              arrow_downward
+            </span>
+          </div>
+        </th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-bottom">
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>mahima.lopez@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <th scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <span class="material-icons-outlined"> remove_red_eye </span>
+          <span class="material-icons-outlined ms-3"> edit </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- 分頁 -->
+  <nav class="d-flex justify-content-end" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item border border-success">
+        <a class="page-link text-success" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item border border-success">
+        <a class="page-link text-success" href="#">1</a>
+      </li>
+      <li class="page-item border border-success">
+        <a class="page-link text-success" href="#">2</a>
+      </li>
+      <li class="page-item border border-success">
+        <a class="page-link text-success" href="#">3</a>
+      </li>
+      <li class="page-item border border-success">
+        <a class="page-link text-success" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
