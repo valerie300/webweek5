@@ -30,3 +30,38 @@
 .text-green{
     background-color: #F8F9FA;
 }
+// modal
+.Emir-img{
+    width: 141px;
+}
+.name-emir{
+    font-size: 24px;
+    line-height: 36px;
+}
+.mail-emir{
+    font-size: 14px;
+}
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    max-height: 0px;
+    transition: all 0.8s;
+    overflow: hidden;
+    z-index: 120;
+  }
+  .dropdown.active {
+    max-height: 300px;
+  }
+ // icon 轉換
+  .more{
+    transition: all .3s;
+  }
+  .verified-link,.more:hover{
+      cursor: pointer;
+  }
+  .less{
+    transition: all .3s;
+    transform: rotate(180deg);
+  }
