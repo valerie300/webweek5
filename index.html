@@ -47,7 +47,7 @@
           </a>
         </li>
         <li class="side-item ms-3 mb-2">
-          <a href="#" class="nav-link active text-success d-flex">
+          <a href="index.html" class="nav-link active text-success d-flex">
             <span class="material-icons-outlined me-3"> assignment </span>
             Assignment
           </a>
@@ -112,27 +112,39 @@
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-body d-flex justify-content-around">
+          <div class="me-4">
+            <img
+              class="Emir-img"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emir.jpeg"
+              alt="Emir Wicks"
+            />
+          </div>
+          <div>
+            <div class="d-flex justify-content-between">
+              <h5 class="modal-title" id="exampleModalLabel">#1</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <h4>Admin</h4>
+            <h3 class="name-emir fw-bolder">Emir Wicks</h3>
+            <p class="mail-emir text-secondary">emir.wicks@mail.com</p>
+            <a class="d-flex justify-content-between verified-link">
+              Verified
+              <span class="material-icons-outlined more text-success"> expand_more </span>
+              <!-- <span class="material-icons-outlined less"> expand_less </span> -->
+            </a>
+            <ul class="dropdown d-flex justify-content-end bg-white">
+              <li class="me-3"><a href="#" class="btn btn-outline-danger px-3" data-bs-dismiss="modal">Deactivate</a></li>
+              <li><a href="#" class="btn btn-success px-3" data-bs-dismiss="modal">Edit</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

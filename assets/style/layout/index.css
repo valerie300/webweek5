@@ -35,4 +35,53 @@
   background-color: #F8F9FA;
 }
 
+.Emir-img {
+  width: 141px;
+}
+
+.name-emir {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.mail-emir {
+  font-size: 14px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  max-height: 0px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  overflow: hidden;
+  z-index: 120;
+}
+
+.dropdown.active {
+  max-height: 300px;
+}
+
+.more {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.verified-link, .more:hover {
+  cursor: pointer;
+}
+
+.less {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 /*# sourceMappingURL=index.css.map */
