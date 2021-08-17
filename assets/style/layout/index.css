@@ -3,7 +3,7 @@
   font-weight: 700;
 }
 
-.course-link {
+.link-dark {
   color: #212529;
 }
 
@@ -20,19 +20,12 @@
 }
 
 .text-width {
-  width: 488px;
   font-size: 14px;
   line-height: 21px;
 }
 
 .hwbtn {
-  background-color: #F8F9FA;
-  border: 1px solid #CED4DA;
   width: 176px;
-}
-
-.text-green {
-  background-color: #F8F9FA;
 }
 
 .Emir-img {
