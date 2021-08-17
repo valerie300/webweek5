@@ -1,10 +1,20 @@
 // modal
+
 .modal-height{
     height: 736px;
 }
 .admin-text{
     font-size: 24px;
     line-height: 33px;
+}
+.border-bottom-dark{
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+.btn-gary{
+    border: solid 1px #CED4DA;
+}
+.gary-border{
+    border-bottom:1px solid #CED4DA;
 }
 // table
 .table{
@@ -18,4 +28,11 @@
 }
 .send-mail{
     color: #CED4DA;
+}
+// pagination
+.text-green:hover{
+    background-color: #198754;
+}
+.page-active{
+    background-color: #198754;
 }

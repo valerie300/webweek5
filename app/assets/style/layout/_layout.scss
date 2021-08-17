@@ -12,7 +12,16 @@ a{
     color: #212529;
     font-weight: 700;
 }
+.nav-link.active::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #198754;
+}
 .nav-bg{
+    min-height: 100vh; //滿高
     width: 296px;
     background-color: #F8F9FA;
 }
@@ -20,6 +29,7 @@ a{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover; //防止圖片變形
 }
 .myemail{
     font-size: 14px;

@@ -25,66 +25,74 @@
   </head>
 
   <body>
-    <div class="container d-flex">
-    <nav class="nav-bg flex-column">
-      <a href="#" class="answer d-block pt-5 ps-4">
-        <img
-          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
-          alt="ANSWER"
-        />
-      </a>
-      <ul class="nav flex-column mt-4">
-        <li class="nav-item ms-3 mb-2">
-          <a href="#" class="nav-link d-flex">
-            <span class="material-icons-outlined me-3"> grid_view </span>
-            Dashboard
+    <div class="d-flex">
+      <nav class="nav-bg d-flex flex-column justify-content-between">
+        <div>
+          <a href="#" class="answer d-block pt-5 ps-4">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg"
+              alt="ANSWER"
+            />
           </a>
-        </li>
-        <li class="side-item ms-3 mb-2">
-          <a href="#" class="nav-link d-flex">
-            <span class="material-icons-outlined me-3"> question_answer </span>
-            Question
-          </a>
-        </li>
-        <li class="side-item ms-3 mb-2">
-          <a href="index.html" class="nav-link active text-success d-flex">
-            <span class="material-icons-outlined me-3"> assignment </span>
-            Assignment
-          </a>
-        </li>
-        <li class="side-item ms-3 mb-2">
-          <a href="#" class="nav-link d-flex">
-            <span class="material-icons-outlined me-3"> smart_display </span>
-            Course
-          </a>
-        </li>
-        <li class="side-item ms-3 mb-2">
-          <a href="list.html" class="nav-link d-flex">
-            <span class="material-icons-outlined me-3"> group </span>
-            Admin
-          </a>
-        </li>
-        <li class="side-item ms-3 mb-2">
-          <a href="#" class="nav-link d-flex">
-            <span class="material-icons-outlined me-3"> settings </span>
-            Settings
-          </a>
-        </li>
-      </ul>
-      <div class="myaccount d-flex align-items-center ms-4">
-        <img
-          class="selfie me-3"
-          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg"
-          alt="selfie"
-        />
-        <p class="myname">Andy Chen
-          <span class="myemail d-block text-secondary">andy0401@mail.com</span>
-        </p>
-      </div>
-    </nav>
-    <%- contents %>
-  </div>
-    
+          <ul class="nav flex-column mt-4">
+            <li class="nav-item ms-3 mb-2">
+              <a href="#" class="nav-link d-flex">
+                <span class="material-icons-outlined me-3"> grid_view </span>
+                Dashboard
+              </a>
+            </li>
+            <li class="side-item ms-3 mb-2">
+              <a href="#" class="nav-link d-flex">
+                <span class="material-icons-outlined me-3">
+                  question_answer
+                </span>
+                Question
+              </a>
+            </li>
+            <li class="side-item ms-3 mb-2">
+              <a href="index.html" class="nav-link active text-success d-flex">
+                <span class="material-icons-outlined me-3"> assignment </span>
+                Assignment
+              </a>
+            </li>
+            <li class="side-item ms-3 mb-2">
+              <a href="#" class="nav-link d-flex">
+                <span class="material-icons-outlined me-3">
+                  smart_display
+                </span>
+                Course
+              </a>
+            </li>
+            <li class="side-item ms-3 mb-2">
+              <a href="list.html" class="nav-link d-flex">
+                <span class="material-icons-outlined me-3"> group </span>
+                Admin
+              </a>
+            </li>
+            <li class="side-item ms-3 mb-2">
+              <a href="#" class="nav-link d-flex">
+                <span class="material-icons-outlined me-3"> settings </span>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="myaccount d-flex align-items-center ms-4">
+          <img
+            class="selfie me-3"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg"
+            alt="selfie"
+          />
+          <!-- 使用者名稱可以使用標題標籤。信箱用 p 標籤 -->
+          <div>
+            <h4 class="myname">Andy Chen</h4>
+            <p class="myemail d-block text-secondary">andy0401@mail.com</p>
+          </div>
+        </div>
+      </nav>
+      <%- contents %>
+    </div>
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
