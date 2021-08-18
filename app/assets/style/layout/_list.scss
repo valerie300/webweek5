@@ -1,5 +1,4 @@
 // modal
-
 .modal-height{
     height: 736px;
 }
@@ -15,6 +14,12 @@
 }
 .gary-border{
     border-bottom:1px solid #CED4DA;
+}
+.form-check-input{
+    border: 2px solid #000;
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
 }
 // table
 .table{
@@ -32,4 +37,8 @@
 // pagination
 .page-active{
     background-color: #198754;
+}
+.page-link{
+    width: 32px;
+    height: 32px;
 }
